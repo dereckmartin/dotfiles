@@ -1,0 +1,15 @@
+startup_message off
+
+term		xterm-256color
+
+nethack		on
+vbell		on
+vbell_msg	DOH!
+
+
+escape ``
+defscrollback	2000
+caption always "%{kc}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kc}%?%+Lw%?"
+hardstatus alwayslastline "%{dw}%H %l %50=%D %M %d %c %Y%="
+sorendition	kG
+activity "%C -> %n%f %t activity!"
