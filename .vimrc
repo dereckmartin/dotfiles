@@ -1,11 +1,13 @@
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-retab
 
+set nocompatible
+set background=dark                                           
+set t_Co=256
+let g:solarized_termcolors=256
 syntax enable
-set background=dark
-colorscheme solarized
+colorscheme solarized                                      
 
 "folding settings
 set foldmethod=indent   "fold based on indent
