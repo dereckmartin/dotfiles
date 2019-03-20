@@ -31,4 +31,4 @@ function rebash () {
 
 ##
  # Dotfiles repository
-alias dotfiles='/usr/bin/git --git-dir=/home/dmartin/.dotfiles --work-tree=/home/dmartin'
+alias dotfiles='/usr/bin/git --git-dir=${HOME}/.dotfiles --work-tree=${HOME}'

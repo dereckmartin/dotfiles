@@ -5,9 +5,7 @@ set expandtab
 set nocompatible
 set background=dark                                           
 set t_Co=256
-let g:solarized_termcolors=256
 syntax enable
-colorscheme solarized                                      
 
 "folding settings
 set foldmethod=indent   "fold based on indent
