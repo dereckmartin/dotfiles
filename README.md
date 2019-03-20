@@ -3,9 +3,9 @@ Setup dotfiles alias
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 
-Clone repositoriy
+Fork repository, and clone
 ```
-git clone --bare https://github.com/dereckmartin/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/<github username>/dotfiles.git $HOME/.dotfiles
 ```
 
 Backup old files that will conflict.
@@ -32,5 +32,7 @@ dotfiles add .vimrc
 dotfiles commit -m "Updated .vimrc"
 dotfiles push -u origin master
 ```
+
+Now you are ready to version control your dotfiles, create branches for different envs, and do cool things.
 
 Reference: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
