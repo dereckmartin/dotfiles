@@ -6,10 +6,10 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-if [ -n "$DISPLAY" ]; then
-    xscreensaver -no-splash &
-    nm-applet > /dev/null 2&>1 &
-fi
+#if [ -n "$DISPLAY" ]; then
+#    xscreensaver -no-splash &
+#    nm-applet > /dev/null 2&>1 &
+#fi
 
 # set environment variables if user's agent already exists
 [ -z "$SSH_AUTH_SOCK" ] && SSH_AUTH_SOCK=$(ls -l /tmp/ssh-*/agent.* 2> /dev/null | grep $(whoami) | awk '{print $9}')
