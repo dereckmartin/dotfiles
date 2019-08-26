@@ -7,7 +7,6 @@ fi
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export PATH
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 ##
  # Edit bashrc and reload.
@@ -25,10 +24,14 @@ function rebash () {
     source $HOME/.bashrc
 }
 
-#
-# setup ssh-agent
-#
-
 ##
  # Dotfiles repository
 alias dotfiles='/usr/bin/git --git-dir=${HOME}/.dotfiles --work-tree=${HOME}'
+
+##
+ # Additional Includes
+ #
+
+for f in ~/.lib/*; do 
+  source $f; 
+done
