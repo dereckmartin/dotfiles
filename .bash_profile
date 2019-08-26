@@ -19,6 +19,7 @@ if [ $(ps aux | grep "ssh-agent \-s" | grep $(whoami) | wc -l) -gt 1 ]; then
   done
   echo "...Starting ssh-agent" 
   eval `ssh-agent -s` > /dev/null
+  ssh-add ~/.ssh/id_rsa
 elif [ $(ps aux | grep "ssh-agent \-s" | grep $(whoami) | wc -l) -eq 0 ]; then
   for i in $(ls -l /$TMPDIR/ssh-*/agent.* 2> /dev/null | grep $(whoami)); do
     rm -f $i
